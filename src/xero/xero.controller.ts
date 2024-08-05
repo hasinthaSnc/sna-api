@@ -7,6 +7,6 @@ export class XeroController {
   @Post('redirect')
   async redirectURL(@Body() body: any): Promise<string> {
     console.log(JSON.stringify(body));
-    return 'Success';
+    return body;
   }
 }
